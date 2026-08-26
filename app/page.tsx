@@ -143,9 +143,9 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { name: 'María G.', text: 'Excelente atención y profesionalismo. Mi sonrisa cambió completamente. El equipo es increíble y muy amable.', rating: 5 },
-              { name: 'Carlos R.', text: 'El mejor lugar para cuidar tus dientes. Tecnología de última generación y resultados sorprendentes en poco tiempo.', rating: 5 },
-              { name: 'Ana S.', text: 'Fui por urgencia dental y me atendieron de inmediato. Servicio excepcional, lo recomiendo ampliamente.', rating: 5 },
+              { name: 'María G.', text: 'Increíble transformación, mis dientes quedaron perfectos en solo 3 sesiones.', rating: 5 },
+              { name: 'Carlos R.', text: 'Llevé a mis hijos y quedaron encantados, personal muy amable.', rating: 5 },
+              { name: 'Ana S.', text: 'Me atendieron de urgencia un domingo, servicio excepcional 100% recomendado.', rating: 5 },
             ].map((t, i) => (
               <div key={i} className="p-8 rounded-2xl" style={{ backgroundColor: '#ECFDF5' }}>
                 <div className="flex mb-4">
