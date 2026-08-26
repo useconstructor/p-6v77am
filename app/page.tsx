@@ -38,7 +38,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
             <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-6" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
-              Clínica Dental de Confianza
+              ⭐ Mejor Clínica Dental 2024 — Más de 500 pacientes satisfechos
             </span>
             <h1 className="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight" style={{ fontFamily: 'DM Sans, sans-serif', color: '#1A2B3C' }}>
               Tu sonrisa perfecta empieza aquí
