@@ -199,9 +199,9 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12" style={{ backgroundColor: '#1A2B3C' }}>
+      <footer className="py-12" style={{ backgroundColor: '#000000' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-2xl font-bold text-white mb-2">Sonrisa Perfecta</h3>
+          <h3 className="text-3xl lg:text-4xl font-bold mb-2" style={{ color: '#10B981' }}>Sonrisa Perfecta</h3>
           <p className="mb-4" style={{ color: '#6EE7B7' }}>Tu sonrisa es nuestra especialidad</p>
           <p className="text-sm" style={{ color: '#9CA3AF' }}>
             Lunes a Viernes: 8am – 6pm &nbsp;|&nbsp; Sábados: 9am – 2pm &nbsp;|&nbsp; Emergencias 24/7
