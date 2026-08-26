@@ -654,3 +654,106 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Step 1 */}
             <div className="relative">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4" style={{ backgroundColor: '#0066CC' }}>1</div>
+              <h3 className="text-lg font-bold mb-2" style={{ color: '#1A2B3C' }}>Agenda tu Cita</h3>
+              <p className="text-sm" style={{ color: '#6B7D8C' }}>Llámanos o usa nuestro formulario en línea para reservar tu consulta inicial.</p>
+            </div>
+            {/* Step 2 */}
+            <div className="relative">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4" style={{ backgroundColor: '#0066CC' }}>2</div>
+              <h3 className="text-lg font-bold mb-2" style={{ color: '#1A2B3C' }}>Evaluación Dental</h3>
+              <p className="text-sm" style={{ color: '#6B7D8C' }}>Nuestro especialista realizará un diagnóstico completo con tecnología de punta.</p>
+            </div>
+            {/* Step 3 */}
+            <div className="relative">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4" style={{ backgroundColor: '#0066CC' }}>3</div>
+              <h3 className="text-lg font-bold mb-2" style={{ color: '#1A2B3C' }}>Plan de Tratamiento</h3>
+              <p className="text-sm" style={{ color: '#6B7D8C' }}>Diseñamos un plan personalizado adaptado a tus necesidades y presupuesto.</p>
+            </div>
+            {/* Step 4 */}
+            <div className="relative">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4" style={{ backgroundColor: '#0066CC' }}>4</div>
+              <h3 className="text-lg font-bold mb-2" style={{ color: '#1A2B3C' }}>Sonrisa Perfecta</h3>
+              <p className="text-sm" style={{ color: '#6B7D8C' }}>Disfruta de los resultados y mantén tu sonrisa saludable con nuestro seguimiento.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4" style={{ fontFamily: 'DM Sans, sans-serif', color: '#1A2B3C' }}>
+              Lo que dicen nuestros pacientes
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { name: 'Paciente Satisfecho', text: 'Excelente atención y profesionalismo. Mi sonrisa cambió completamente. Muy recomendado.', rating: 5 },
+              { name: 'Paciente Satisfecho', text: 'El mejor lugar para cuidar tus dientes. Personal amable y tecnología de última generación.', rating: 5 },
+              { name: 'Paciente Satisfecho', text: 'Fui por urgencia dental y me atendieron de inmediato. Servicio excepcional las 24 horas.', rating: 5 },
+            ].map((t, i) => (
+              <div key={i} className="p-8 rounded-2xl" style={{ backgroundColor: '#F0F7FF' }}>
+                <div className="flex mb-4">
+                  {[...Array(t.rating)].map((_, j) => (
+                    <span key={j} style={{ color: '#FFD700', fontSize: '1.25rem' }}>★</span>
+                  ))}
+                </div>
+                <p className="mb-6 italic" style={{ color: '#4A5568' }}>"{t.text}"</p>
+                <p className="font-semibold" style={{ color: '#1A2B3C' }}>— {t.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact / Appointment Form */}
+      <section id="cita" className="py-20 lg:py-28" style={{ backgroundColor: '#0066CC' }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">¿Listo para tu sonrisa perfecta?</h2>
+          <p className="text-blue-100 text-lg mb-10">Agenda tu consulta gratuita hoy. Sin compromiso.</p>
+          <div className="bg-white rounded-2xl p-8 text-left">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-medium mb-2" style={{ color: '#1A2B3C' }}>Nombre completo</label>
+                <input type="text" placeholder="Tu nombre" className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-2" style={{ color: '#1A2B3C' }}>Teléfono</label>
+                <input type="tel" placeholder="Tu número de teléfono" className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-2" style={{ color: '#1A2B3C' }}>Correo electrónico</label>
+                <input type="email" placeholder="tu@correo.com" className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-2" style={{ color: '#1A2B3C' }}>Servicio de interés</label>
+                <select className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  <option>Limpieza dental</option>
+                  <option>Blanqueamiento</option>
+                  <option>Ortodoncia</option>
+                  <option>Implantes</option>
+                  <option>Emergencia dental</option>
+                </select>
+              </div>
+            </div>
+            <button className="mt-6 w-full py-4 rounded-lg text-white font-bold text-lg transition-opacity hover:opacity-90" style={{ backgroundColor: '#0066CC' }}>
+              Agendar Consulta Gratuita
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-12" style={{ backgroundColor: '#1A2B3C' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h3 className="text-2xl font-bold text-white mb-2">Sonrisa Perfecta</h3>
+          <p className="text-blue-300 mb-4">Tu sonrisa es nuestra especialidad</p>
+          <p className="text-gray-400 text-sm">Lunes a Viernes: 8am – 6pm &nbsp;|&nbsp; Sábados: 9am – 2pm &nbsp;|&nbsp; Emergencias 24/7</p>
+          <p className="text-gray-500 text-xs mt-6">© 2024 Sonrisa Perfecta. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </main>
+  );
+}
