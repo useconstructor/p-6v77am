@@ -28,8 +28,13 @@ export default function Home() {
         </div>
       </header>
 
+      {/* Emergency Banner */}
+      <div className="fixed top-16 left-0 right-0 z-40 text-center py-2 px-4" style={{ backgroundColor: '#FEF3C7', color: '#92400E' }}>
+        <span className="text-sm font-medium">🦷 Atención de Emergencias Dentales 24/7 — Llama ahora: +57 300 000 0000</span>
+      </div>
+
       {/* Hero */}
-      <section className="pt-24 pb-20 lg:pt-32 lg:pb-28" style={{ background: 'linear-gradient(135deg, #ECFDF5 0%, #FFFFFF 60%)' }}>
+      <section className="pt-32 pb-20 lg:pt-40 lg:pb-28" style={{ background: 'linear-gradient(135deg, #ECFDF5 0%, #FFFFFF 60%)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
             <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-6" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
