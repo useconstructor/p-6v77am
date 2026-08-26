@@ -12,7 +12,7 @@ export default function Home() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-          <span className="text-xl font-bold" style={{ color: '#0066CC' }}>Sonrisa Perfecta</span>
+          <span className="text-xl font-bold" style={{ color: '#10B981' }}>Sonrisa Perfecta</span>
           <nav className="hidden md:flex items-center gap-8">
             {['Servicios', 'Equipo', 'Testimonios', 'Contacto'].map(item => (
               <a key={item} href={`#${item.toLowerCase()}`} className="text-sm font-medium hover:opacity-70 transition-opacity" style={{ color: '#1A2B3C' }}>{item}</a>
@@ -21,7 +21,7 @@ export default function Home() {
           <a
             href="#cita"
             className="px-5 py-2 rounded-lg text-sm font-semibold text-white transition-opacity hover:opacity-90"
-            style={{ backgroundColor: '#0066CC' }}
+            style={{ backgroundColor: '#10B981' }}
           >
             Agendar Cita
           </a>
@@ -29,10 +29,10 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="pt-24 pb-20 lg:pt-32 lg:pb-28" style={{ background: 'linear-gradient(135deg, #E8F4FF 0%, #FFFFFF 60%)' }}>
+      <section className="pt-24 pb-20 lg:pt-32 lg:pb-28" style={{ background: 'linear-gradient(135deg, #ECFDF5 0%, #FFFFFF 60%)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
-            <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-6" style={{ backgroundColor: '#E8F4FF', color: '#0066CC' }}>
+            <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-6" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
               Clínica Dental de Confianza
             </span>
             <h1 className="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight" style={{ fontFamily: 'DM Sans, sans-serif', color: '#1A2B3C' }}>
@@ -45,14 +45,14 @@ export default function Home() {
               <a
                 href="#cita"
                 className="px-8 py-4 rounded-xl text-white font-bold text-lg text-center transition-opacity hover:opacity-90"
-                style={{ backgroundColor: '#0066CC' }}
+                style={{ backgroundColor: '#10B981' }}
               >
                 Consulta Gratuita
               </a>
               <a
                 href="#servicios"
                 className="px-8 py-4 rounded-xl font-bold text-lg text-center border-2 transition-colors"
-                style={{ borderColor: '#0066CC', color: '#0066CC' }}
+                style={{ borderColor: '#10B981', color: '#10B981' }}
               >
                 Ver Servicios
               </a>
@@ -60,7 +60,7 @@ export default function Home() {
             <div className="mt-10 flex items-center gap-6">
               {[['+500', 'Pacientes atendidos'], ['10+', 'Años de experiencia'], ['3', 'Especialistas']].map(([n, l]) => (
                 <div key={l}>
-                  <div className="text-2xl font-extrabold" style={{ color: '#0066CC' }}>{n}</div>
+                  <div className="text-2xl font-extrabold" style={{ color: '#10B981' }}>{n}</div>
                   <div className="text-xs" style={{ color: '#6B7D8C' }}>{l}</div>
                 </div>
               ))}
@@ -73,7 +73,7 @@ export default function Home() {
       <section id="servicios" className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#E8F4FF', color: '#0066CC' }}>
+            <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
               Nuestros Servicios
             </span>
             <h2 className="text-3xl lg:text-4xl font-bold" style={{ fontFamily: 'DM Sans, sans-serif', color: '#1A2B3C' }}>
@@ -89,7 +89,7 @@ export default function Home() {
               { icon: '🚨', title: 'Emergencias 24/7', desc: 'Atención inmediata para dolor dental, fracturas y cualquier urgencia bucal.' },
               { icon: '👶', title: 'Odontología Infantil', desc: 'Cuidado especializado y amigable para los más pequeños de la familia.' },
             ].map((s, i) => (
-              <div key={i} className="p-8 rounded-2xl transition-shadow hover:shadow-lg" style={{ backgroundColor: '#F0F7FF' }}>
+              <div key={i} className="p-8 rounded-2xl transition-shadow hover:shadow-lg" style={{ backgroundColor: '#ECFDF5' }}>
                 <div className="text-4xl mb-4">{s.icon}</div>
                 <h3 className="text-xl font-bold mb-3" style={{ color: '#1A2B3C' }}>{s.title}</h3>
                 <p style={{ color: '#6B7D8C', lineHeight: '1.6' }}>{s.desc}</p>
@@ -100,10 +100,10 @@ export default function Home() {
       </section>
 
       {/* Team */}
-      <section id="equipo" className="py-20 lg:py-28" style={{ backgroundColor: '#F8FBFF' }}>
+      <section id="equipo" className="py-20 lg:py-28" style={{ backgroundColor: '#F0FDF9' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#E8F4FF', color: '#0066CC' }}>
+            <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
               Nuestro Equipo
             </span>
             <h2 className="text-3xl lg:text-4xl font-bold" style={{ fontFamily: 'DM Sans, sans-serif', color: '#1A2B3C' }}>
@@ -117,11 +117,11 @@ export default function Home() {
               { role: 'Odontólogo', specialty: 'Estética y Blanqueamiento', initial: 'O' },
             ].map((m, i) => (
               <div key={i} className="text-center p-8 rounded-2xl bg-white shadow-sm">
-                <div className="w-20 h-20 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" style={{ backgroundColor: '#0066CC' }}>
+                <div className="w-20 h-20 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" style={{ backgroundColor: '#10B981' }}>
                   {m.initial}
                 </div>
                 <h3 className="text-lg font-bold mb-1" style={{ color: '#1A2B3C' }}>{m.role}</h3>
-                <p className="text-sm" style={{ color: '#0066CC' }}>{m.specialty}</p>
+                <p className="text-sm" style={{ color: '#10B981' }}>{m.specialty}</p>
               </div>
             ))}
           </div>
@@ -142,7 +142,7 @@ export default function Home() {
               { name: 'Carlos R.', text: 'El mejor lugar para cuidar tus dientes. Tecnología de última generación y resultados sorprendentes en poco tiempo.', rating: 5 },
               { name: 'Ana S.', text: 'Fui por urgencia dental y me atendieron de inmediato. Servicio excepcional, lo recomiendo ampliamente.', rating: 5 },
             ].map((t, i) => (
-              <div key={i} className="p-8 rounded-2xl" style={{ backgroundColor: '#F0F7FF' }}>
+              <div key={i} className="p-8 rounded-2xl" style={{ backgroundColor: '#ECFDF5' }}>
                 <div className="flex mb-4">
                   {[...Array(t.rating)].map((_, j) => (
                     <span key={j} style={{ color: '#FFD700', fontSize: '1.25rem' }}>★</span>
@@ -157,27 +157,27 @@ export default function Home() {
       </section>
 
       {/* Appointment Form */}
-      <section id="cita" className="py-20 lg:py-28" style={{ backgroundColor: '#0066CC' }}>
+      <section id="cita" className="py-20 lg:py-28" style={{ backgroundColor: '#10B981' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">¿Listo para tu sonrisa perfecta?</h2>
-          <p className="text-blue-100 text-lg mb-10">Agenda tu consulta gratuita hoy. Sin compromiso.</p>
+          <p className="text-emerald-100 text-lg mb-10">Agenda tu consulta gratuita hoy. Sin compromiso.</p>
           <div className="bg-white rounded-2xl p-8 text-left">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium mb-2" style={{ color: '#1A2B3C' }}>Nombre completo</label>
-                <input type="text" placeholder="Tu nombre" className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2" style={{ outlineColor: '#0066CC' }} />
+                <input type="text" placeholder="Tu nombre" className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2" style={{ outlineColor: '#10B981' }} />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2" style={{ color: '#1A2B3C' }}>Teléfono</label>
-                <input type="tel" placeholder="Tu número de teléfono" className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2" style={{ outlineColor: '#0066CC' }} />
+                <input type="tel" placeholder="Tu número de teléfono" className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2" style={{ outlineColor: '#10B981' }} />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2" style={{ color: '#1A2B3C' }}>Correo electrónico</label>
-                <input type="email" placeholder="tu@correo.com" className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2" style={{ outlineColor: '#0066CC' }} />
+                <input type="email" placeholder="tu@correo.com" className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2" style={{ outlineColor: '#10B981' }} />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2" style={{ color: '#1A2B3C' }}>Servicio de interés</label>
-                <select className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white focus:outline-none focus:ring-2" style={{ outlineColor: '#0066CC' }}>
+                <select className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white focus:outline-none focus:ring-2" style={{ outlineColor: '#10B981' }}>
                   <option>Limpieza dental</option>
                   <option>Blanqueamiento</option>
                   <option>Ortodoncia</option>
@@ -186,7 +186,7 @@ export default function Home() {
                 </select>
               </div>
             </div>
-            <button className="mt-6 w-full py-4 rounded-xl text-white font-bold text-lg transition-opacity hover:opacity-90" style={{ backgroundColor: '#0066CC' }}>
+            <button className="mt-6 w-full py-4 rounded-xl text-white font-bold text-lg transition-opacity hover:opacity-90" style={{ backgroundColor: '#10B981' }}>
               Agendar Consulta Gratuita
             </button>
           </div>
@@ -197,7 +197,7 @@ export default function Home() {
       <footer className="py-12" style={{ backgroundColor: '#1A2B3C' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-2xl font-bold text-white mb-2">Sonrisa Perfecta</h3>
-          <p className="mb-4" style={{ color: '#93C5FD' }}>Tu sonrisa es nuestra especialidad</p>
+          <p className="mb-4" style={{ color: '#6EE7B7' }}>Tu sonrisa es nuestra especialidad</p>
           <p className="text-sm" style={{ color: '#9CA3AF' }}>
             Lunes a Viernes: 8am – 6pm &nbsp;|&nbsp; Sábados: 9am – 2pm &nbsp;|&nbsp; Emergencias 24/7
           </p>
