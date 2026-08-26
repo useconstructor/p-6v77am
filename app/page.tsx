@@ -1,11 +1,37 @@
-import type { Metadata } from 'next';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Sonrisa Perfecta — Clínica Dental Profesional',
-  description: 'Cuidamos tu sonrisa con tecnología de punta. Servicios de limpieza, blanqueamiento, ortodoncia, implantes y emergencias 24/7.',
-};
+import { useState } from 'react';
 
 export default function Home() {
+  const [openQuestion, setOpenQuestion] = useState<number | null>(null);
+
+  const handleQuestionClick = (index: number) => {
+    setOpenQuestion(openQuestion === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: '¿Cuánto dura una limpieza dental?',
+      answer: 'Una limpieza dental profesional típicamente dura entre 30 y 60 minutos, dependiendo del estado de salud bucal del paciente y la cantidad de sarro acumulado.'
+    },
+    {
+      question: '¿El blanqueamiento dental duele?',
+      answer: 'No, el blanqueamiento dental no duele. Algunos pacientes pueden experimentar sensibilidad temporal en los dientes, pero esto es manejable y desaparece en pocos días.'
+    },
+    {
+      question: '¿Cuánto tiempo dura un implante?',
+      answer: 'Los implantes dentales están diseñados para durar toda la vida con el cuidado adecuado. Con buena higiene oral y visitas regulares al dentista, pueden durar más de 25 años.'
+    },
+    {
+      question: '¿Desde qué edad se puede usar ortodoncia?',
+      answer: 'Se recomienda la primera evaluación ortodóntica a los 7 años. Sin embargo, la ortodoncia puede realizarse a cualquier edad, tanto en niños como en adultos.'
+    },
+    {
+      question: '¿Atienden emergencias los fines de semana?',
+      answer: 'Sí, atendemos emergencias dentales las 24 horas del día, los 7 días de la semana, incluyendo fines de semana y días festivos. Llámanos al +57 300 000 0000.'
+    }
+  ];
+
   return (
     <main className="min-h-screen font-sans" style={{ backgroundColor: '#FFFFFF' }}>
 
@@ -155,6 +181,51 @@ export default function Home() {
                 </div>
                 <p className="mb-6 italic" style={{ color: '#4A5568', lineHeight: '1.7' }}>"{t.text}"</p>
                 <p className="font-semibold" style={{ color: '#1A2B3C' }}>— {t.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="py-20 lg:py-28" style={{ backgroundColor: '#F0FDF9' }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
+              Preguntas Frecuentes
+            </span>
+            <h2 className="text-3xl lg:text-4xl font-bold" style={{ fontFamily: 'DM Sans, sans-serif', color: '#1A2B3C' }}>
+              Resolvemos tus dudas
+            </h2>
+          </div>
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-sm overflow-hidden">
+                <button
+                  onClick={() => handleQuestionClick(index)}
+                  className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                >
+                  <h3 className="text-lg font-semibold" style={{ color: '#1A2B3C' }}>
+                    {faq.question}
+                  </h3>
+                  <span
+                    className="text-2xl font-light transition-transform duration-300"
+                    style={{
+                      color: '#10B981',
+                      transform: openQuestion === index ? 'rotate(45deg)' : 'rotate(0deg)',
+                      display: 'inline-block'
+                    }}
+                  >
+                    +
+                  </span>
+                </button>
+                {openQuestion === index && (
+                  <div className="px-6 pb-5">
+                    <p style={{ color: '#6B7D8C', lineHeight: '1.7' }}>
+                      {faq.answer}
+                    </p>
+                  </div>
+                )}
               </div>
             ))}
           </div>
