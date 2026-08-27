@@ -232,6 +232,144 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section id="precios" className="py-20 lg:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
+              Planes y Precios
+            </span>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4" style={{ fontFamily: 'DM Sans, sans-serif', color: '#1A2B3C' }}>
+              Elige el plan perfecto para ti
+            </h2>
+            <p className="text-lg" style={{ color: '#6B7D8C' }}>
+              Precios transparentes, sin sorpresas. Todos los planes incluyen garantía de satisfacción.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Plan Básico */}
+            <div className="rounded-2xl border-2 border-gray-200 p-8 relative">
+              <h3 className="text-2xl font-bold mb-2" style={{ color: '#1A2B3C' }}>Plan Básico</h3>
+              <p className="text-sm mb-6" style={{ color: '#6B7D8C' }}>Para tu salud dental esencial</p>
+              <div className="mb-6">
+                <span className="text-sm" style={{ color: '#6B7D8C' }}>Desde</span>
+                <div className="text-4xl font-bold" style={{ color: '#10B981' }}>$50.000</div>
+              </div>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span style={{ color: '#4A5568' }}>Limpieza dental profesional</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span style={{ color: '#4A5568' }}>Consulta y diagnóstico</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span style={{ color: '#4A5568' }}>Radiografía básica</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span style={{ color: '#4A5568' }}>Plan de tratamiento</span>
+                </li>
+              </ul>
+              <a
+                href="#cita"
+                className="block w-full py-3 rounded-lg text-center font-semibold border-2 transition-colors"
+                style={{ borderColor: '#10B981', color: '#10B981' }}
+              >
+                Elegir Plan Básico
+              </a>
+            </div>
+
+            {/* Plan Familiar */}
+            <div className="rounded-2xl border-2 p-8 relative" style={{ borderColor: '#10B981' }}>
+              <span className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 py-1 rounded-full text-xs font-semibold text-white" style={{ backgroundColor: '#10B981' }}>
+                Más Popular
+              </span>
+              <h3 className="text-2xl font-bold mb-2" style={{ color: '#1A2B3C' }}>Plan Familiar</h3>
+              <p className="text-sm mb-6" style={{ color: '#6B7D8C' }}>Ideal para toda la familia</p>
+              <div className="mb-6">
+                <span className="text-sm" style={{ color: '#6B7D8C' }}>Desde</span>
+                <div className="text-4xl font-bold" style={{ color: '#10B981' }}>$120.000</div>
+              </div>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span style={{ color: '#4A5568' }}>Todo lo del Plan Básico</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span style={{ color: '#4A5568' }}>20% descuento para familiares</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span style={{ color: '#4A5568' }}>Fluorización gratuita</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span style={{ color: '#4A5568' }}>Sellantes preventivos</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span style={{ color: '#4A5568' }}>2 limpiezas al año incluidas</span>
+                </li>
+              </ul>
+              <a
+                href="#cita"
+                className="block w-full py-3 rounded-lg text-center font-semibold text-white transition-opacity hover:opacity-90"
+                style={{ backgroundColor: '#10B981' }}
+              >
+                Elegir Plan Familiar
+              </a>
+            </div>
+
+            {/* Plan Premium */}
+            <div className="rounded-2xl border-2 border-gray-200 p-8 relative">
+              <h3 className="text-2xl font-bold mb-2" style={{ color: '#1A2B3C' }}>Plan Premium</h3>
+              <p className="text-sm mb-6" style={{ color: '#6B7D8C' }}>Cuidado dental completo</p>
+              <div className="mb-6">
+                <span className="text-sm" style={{ color: '#6B7D8C' }}>Desde</span>
+                <div className="text-4xl font-bold" style={{ color: '#10B981' }}>$200.000</div>
+              </div>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span style={{ color: '#4A5568' }}>Todos los servicios disponibles</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span style={{ color: '#4A5568' }}>Atención prioritaria sin citas</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span style={{ color: '#4A5568' }}>Blanqueamiento anual incluido</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span style={{ color: '#4A5568' }}>30% descuento en tratamientos</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span style={{ color: '#4A5568' }}>Emergencias 24/7 sin costo extra</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span style={{ color: '#4A5568' }}>Garantía extendida en todos los procedimientos</span>
+                </li>
+              </ul>
+              <a
+                href="#cita"
+                className="block w-full py-3 rounded-lg text-center font-semibold border-2 transition-colors"
+                style={{ borderColor: '#10B981', color: '#10B981' }}
+              >
+                Elegir Plan Premium
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Appointment Form */}
       <section id="cita" className="py-20 lg:py-28" style={{ backgroundColor: '#10B981' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
