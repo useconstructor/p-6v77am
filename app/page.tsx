@@ -53,6 +53,29 @@ export default function Home() {
     }
   ];
 
+  const timelineEvents = [
+    {
+      year: '2010',
+      title: 'Fundación',
+      description: 'Abrimos nuestras puertas con la misión de transformar sonrisas y ofrecer atención dental de calidad a nuestra comunidad.'
+    },
+    {
+      year: '2015',
+      title: 'Primera Expansión',
+      description: 'Ampliamos nuestras instalaciones y duplicamos nuestro equipo de especialistas para atender la creciente demanda de pacientes.'
+    },
+    {
+      year: '2019',
+      title: 'Certificación Internacional',
+      description: 'Obtuvimos la certificación ISO 9001 y reconocimiento internacional por nuestros estándares de calidad y protocolos de atención.'
+    },
+    {
+      year: '2024',
+      title: 'Clínica Digital',
+      description: 'Implementamos tecnología de vanguardia con escáneres 3D, radiografías digitales y sistema de citas en línea para una experiencia moderna.'
+    }
+  ];
+
   return (
     <main className="min-h-screen font-sans" style={{ backgroundColor: '#FFFFFF' }}>
 
@@ -167,8 +190,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Our History Timeline */}
+      <section id="historia" className="py-20 lg:py-28" style={{ backgroundColor: '#F0FDF9' }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
+              Nuestra Trayectoria
+            </span>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4" style={{ fontFamily: 'DM Sans, sans-serif', color: '#1A2B3C' }}>
+              Nuestra Historia
+            </h2>
+            <p className="text-lg" style={{ color: '#6B7D8C' }}>
+              Más de una década transformando sonrisas
+            </p>
+          </div>
+          <div className="relative">
+            <div className="absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 top-0 bottom-0 w-0.5" style={{ backgroundColor: '#10B981' }}></div>
+            <div className="space-y-12">
+              {timelineEvents.map((event, index) => (
+                <div key={index} className="relative pl-12 md:pl-0">
+                  <div className="absolute left-0 md:left-1/2 md:transform md:-translate-x-1/2 w-8 h-8 rounded-full border-4 border-white flex items-center justify-center" style={{ backgroundColor: '#10B981' }}>
+                    <div className="w-3 h-3 rounded-full bg-white"></div>
+                  </div>
+                  <div className={`md:w-5/12 ${index % 2 === 0 ? 'md:ml-auto md:pl-12' : 'md:mr-auto md:pr-12 md:text-right'}`}>
+                    <div className="bg-white rounded-xl p-6 shadow-sm">
+                      <span className="text-2xl font-extrabold" style={{ color: '#10B981' }}>{event.year}</span>
+                      <h3 className="text-xl font-bold mt-2 mb-2" style={{ color: '#1A2B3C' }}>{event.title}</h3>
+                      <p style={{ color: '#6B7D8C', lineHeight: '1.6' }}>{event.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Before & After Section */}
-      <section id="antes-despues" className="py-20 lg:py-28" style={{ backgroundColor: '#F0FDF9' }}>
+      <section id="antes-despues" className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
@@ -225,7 +284,7 @@ export default function Home() {
       </section>
 
       {/* Team */}
-      <section id="equipo" className="py-20 lg:py-28 bg-white">
+      <section id="equipo" className="py-20 lg:py-28" style={{ backgroundColor: '#F0FDF9' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
@@ -254,7 +313,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section id="testimonios" className="py-20 lg:py-28" style={{ backgroundColor: '#F0FDF9' }}>
+      <section id="testimonios" className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold" style={{ fontFamily: 'DM Sans, sans-serif', color: '#1A2B3C' }}>
@@ -282,7 +341,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="py-20 lg:py-28 bg-white">
+      <section id="faq" className="py-20 lg:py-28" style={{ backgroundColor: '#F0FDF9' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
@@ -327,7 +386,7 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section id="precios" className="py-20 lg:py-28" style={{ backgroundColor: '#F0FDF9' }}>
+      <section id="precios" className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
