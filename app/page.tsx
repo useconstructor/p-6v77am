@@ -56,6 +56,22 @@ export default function Home() {
   return (
     <main className="min-h-screen font-sans" style={{ backgroundColor: '#FFFFFF' }}>
 
+      {/* Promo Banner */}
+      <div className="w-full py-3 px-4 text-center" style={{ backgroundColor: '#065F46' }}>
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-3">
+          <span className="text-white text-sm sm:text-base font-medium">
+            🎉 Oferta especial: 20% de descuento en blanqueamiento dental este mes. ¡Agenda hoy!
+          </span>
+          <a
+            href="#cita"
+            className="px-4 py-1.5 rounded-lg text-sm font-semibold transition-opacity hover:opacity-90"
+            style={{ backgroundColor: '#FFFFFF', color: '#065F46' }}
+          >
+            Ver oferta
+          </a>
+        </div>
+      </div>
+
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
