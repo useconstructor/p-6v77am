@@ -11,24 +11,20 @@ export default function Home() {
 
   const faqs = [
     {
-      question: '¿Cuánto dura una limpieza dental?',
-      answer: 'Una limpieza dental profesional típicamente dura entre 30 y 60 minutos, dependiendo del estado de salud bucal del paciente y la cantidad de sarro acumulado.'
+      question: '¿Duele el blanqueamiento dental?',
+      answer: 'No, el blanqueamiento dental profesional no causa dolor. Algunos pacientes pueden experimentar una sensibilidad temporal leve durante o después del tratamiento, pero esto es completamente normal y desaparece en 24-48 horas. Utilizamos geles de última generación con agentes desensibilizantes para minimizar cualquier molestia.'
     },
     {
-      question: '¿El blanqueamiento dental duele?',
-      answer: 'No, el blanqueamiento dental no duele. Algunos pacientes pueden experimentar sensibilidad temporal en los dientes, pero esto es manejable y desaparece en pocos días.'
+      question: '¿Cuánto dura una consulta dental?',
+      answer: 'Una consulta de evaluación inicial dura aproximadamente 30-45 minutos. Durante este tiempo realizamos un examen completo, tomamos radiografías si es necesario, y elaboramos un plan de tratamiento personalizado. Los tratamientos específicos varían en duración según su complejidad.'
     },
     {
-      question: '¿Cuánto tiempo dura un implante?',
-      answer: 'Los implantes dentales están diseñados para durar toda la vida con el cuidado adecuado. Con buena higiene oral y visitas regulares al dentista, pueden durar más de 25 años.'
+      question: '¿Tienen opciones de financiamiento?',
+      answer: 'Sí, ofrecemos múltiples opciones de financiamiento para que puedas acceder a los tratamientos que necesitas. Trabajamos con tarjetas de crédito, planes de pago sin intereses hasta 12 meses, y convenios con entidades financieras. Pregunta por nuestro plan de pagos personalizado.'
     },
     {
-      question: '¿Desde qué edad se puede usar ortodoncia?',
-      answer: 'Se recomienda la primera evaluación ortodóntica a los 7 años. Sin embargo, la ortodoncia puede realizarse a cualquier edad, tanto en niños como en adultos.'
-    },
-    {
-      question: '¿Atienden emergencias los fines de semana?',
-      answer: 'Sí, atendemos emergencias dentales las 24 horas del día, los 7 días de la semana, incluyendo fines de semana y días festivos. Llámanos al +57 300 000 0000.'
+      question: '¿Qué tipo de anestesia utilizan?',
+      answer: 'Utilizamos anestesia local de última generación que adormece únicamente la zona a tratar, permitiéndote estar consciente y cómodo durante el procedimiento. Para pacientes con ansiedad dental, también ofrecemos sedación consciente. Todos nuestros anestésicos son seguros y de alta calidad.'
     }
   ];
 
