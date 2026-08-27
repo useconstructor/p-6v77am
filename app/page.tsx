@@ -32,6 +32,27 @@ export default function Home() {
     }
   ];
 
+  const beforeAfterCases = [
+    {
+      name: 'Laura Méndez',
+      treatment: 'Blanqueamiento Dental',
+      before: 'Dientes amarillentos por consumo de café y té durante años',
+      after: 'Sonrisa blanca y radiante, 8 tonos más clara'
+    },
+    {
+      name: 'Roberto Sánchez',
+      treatment: 'Ortodoncia Invisible',
+      before: 'Dientes desalineados y apiñados en la parte frontal',
+      after: 'Sonrisa perfectamente alineada y armoniosa'
+    },
+    {
+      name: 'Patricia Gómez',
+      treatment: 'Implantes Dentales',
+      before: 'Pérdida de dos piezas dentales superiores',
+      after: 'Dentadura completa con implantes naturales'
+    }
+  ];
+
   return (
     <main className="min-h-screen font-sans" style={{ backgroundColor: '#FFFFFF' }}>
 
@@ -130,8 +151,65 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Before & After Section */}
+      <section id="antes-despues" className="py-20 lg:py-28" style={{ backgroundColor: '#F0FDF9' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
+              Resultados Reales
+            </span>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4" style={{ fontFamily: 'DM Sans, sans-serif', color: '#1A2B3C' }}>
+              Antes y Después
+            </h2>
+            <p className="text-lg" style={{ color: '#6B7D8C' }}>
+              Conoce las transformaciones de nuestros pacientes
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {beforeAfterCases.map((caseItem, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-6 transition-shadow duration-300 cursor-pointer"
+                style={{
+                  boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.boxShadow = '0 10px 40px rgba(16, 185, 129, 0.3)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.1)';
+                }}
+              >
+                <div className="text-center mb-6">
+                  <h3 className="text-xl font-bold mb-1" style={{ color: '#1A2B3C' }}>{caseItem.name}</h3>
+                  <span className="inline-block px-3 py-1 rounded-full text-sm font-medium" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
+                    {caseItem.treatment}
+                  </span>
+                </div>
+                <div className="flex gap-4">
+                  <div
+                    className="flex-1 rounded-xl p-4 flex flex-col justify-center min-h-32"
+                    style={{ backgroundColor: '#9CA3AF' }}
+                  >
+                    <span className="text-xs font-bold text-white uppercase tracking-wide mb-2">Antes</span>
+                    <p className="text-sm text-white leading-relaxed">{caseItem.before}</p>
+                  </div>
+                  <div
+                    className="flex-1 rounded-xl p-4 flex flex-col justify-center min-h-32"
+                    style={{ backgroundColor: '#10B981' }}
+                  >
+                    <span className="text-xs font-bold text-white uppercase tracking-wide mb-2">Después</span>
+                    <p className="text-sm text-white leading-relaxed">{caseItem.after}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Team */}
-      <section id="equipo" className="py-20 lg:py-28" style={{ backgroundColor: '#F0FDF9' }}>
+      <section id="equipo" className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
@@ -160,7 +238,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section id="testimonios" className="py-20 lg:py-28 bg-white">
+      <section id="testimonios" className="py-20 lg:py-28" style={{ backgroundColor: '#F0FDF9' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold" style={{ fontFamily: 'DM Sans, sans-serif', color: '#1A2B3C' }}>
@@ -188,7 +266,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="py-20 lg:py-28" style={{ backgroundColor: '#F0FDF9' }}>
+      <section id="faq" className="py-20 lg:py-28 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
@@ -233,7 +311,7 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section id="precios" className="py-20 lg:py-28 bg-white">
+      <section id="precios" className="py-20 lg:py-28" style={{ backgroundColor: '#F0FDF9' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#ECFDF5', color: '#10B981' }}>
@@ -248,7 +326,7 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Plan Básico */}
-            <div className="rounded-2xl border-2 border-gray-200 p-8 relative">
+            <div className="rounded-2xl border-2 border-gray-200 p-8 relative bg-white">
               <h3 className="text-2xl font-bold mb-2" style={{ color: '#1A2B3C' }}>Plan Básico</h3>
               <p className="text-sm mb-6" style={{ color: '#6B7D8C' }}>Para tu salud dental esencial</p>
               <div className="mb-6">
@@ -283,7 +361,7 @@ export default function Home() {
             </div>
 
             {/* Plan Familiar */}
-            <div className="rounded-2xl border-2 p-8 relative" style={{ borderColor: '#10B981' }}>
+            <div className="rounded-2xl border-2 p-8 relative bg-white" style={{ borderColor: '#10B981' }}>
               <span className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 py-1 rounded-full text-xs font-semibold text-white" style={{ backgroundColor: '#10B981' }}>
                 Más Popular
               </span>
@@ -325,7 +403,7 @@ export default function Home() {
             </div>
 
             {/* Plan Premium */}
-            <div className="rounded-2xl border-2 border-gray-200 p-8 relative">
+            <div className="rounded-2xl border-2 border-gray-200 p-8 relative bg-white">
               <h3 className="text-2xl font-bold mb-2" style={{ color: '#1A2B3C' }}>Plan Premium</h3>
               <p className="text-sm mb-6" style={{ color: '#6B7D8C' }}>Cuidado dental completo</p>
               <div className="mb-6">
