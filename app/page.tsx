@@ -132,6 +132,13 @@ export default function Home() {
               <a
                 href="#cita"
                 className="px-8 py-4 rounded-xl text-white font-bold text-lg text-center transition-opacity hover:opacity-90"
+                style={{ backgroundColor: '#5de05d' }}
+              >
+                Reservar Cita
+              </a>
+              <a
+                href="#cita"
+                className="px-8 py-4 rounded-xl text-white font-bold text-lg text-center transition-opacity hover:opacity-90"
                 style={{ backgroundColor: '#10B981' }}
               >
                 Consulta Gratuita
